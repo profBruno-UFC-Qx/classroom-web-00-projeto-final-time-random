@@ -1,35 +1,49 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/IDEzcQ6G)
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23435103)
-# :checkered_flag: NOME DO PROJETO
+# :checkered_flag: Gradus - Study Tracker Gamificado
 
 Breve descrição do que o seu projeto faz.
 
 ## :technologist: Membros da equipe
 
-Matrícula, nome e curso dos participantes.
+* 579503 - João Henrique Correia de Sousa - Sistemas de Informação
+* 582602 - Antonia Janielly Benicio da Silva - Ciência da Computação
 
 ## :bulb: Objetivo Geral
-Descrever o objetivo de geral do projeto
+
+Auxiliar estudantes universitários na organização de suas rotinas de estudo através de técnicas de gamificação, visando reduzir a procrastinação, combater a evasão e incentivar a consistência acadêmica.
 
 ## :eyes: Público-Alvo
-Público-alvo do projeto
+
+Estudantes universitários (graduação e pós-graduação).
 
 ## :star2: Impacto Esperado
-Descreva o impacto esperado do projeto em relação ao público alvo
+
+Melhorar o engajamento do aluno com suas responsabilidades diárias, transformando a carga pesada de estudos em uma jornada visualmente recompensadora, fornecendo métricas claras de progresso pessoal.
 
 ## :people_holding_hands: Papéis ou tipos de usuário da aplicação
 
-Informe aqui os tipos de usuário que irão interagir com a aplicação. Ex: administrador, locador, locatario, usuário não logado.
-
-> Tenha em mente que obrigatoriamente a aplicação deve possuir funcionalidades acessíveis a todos os tipos de usuário e outra funcionalidades restritas a certos tipos de usuários.
+**Usuário Não Logado:** Visitante que acessa apenas a landing page, tela de login e formulário de cadastro.
+**User (Estudante):** Usuário autenticado que gerencia exclusivamente suas próprias tarefas, ganha XP e avança de níveis.
+**Monitor:** Usuário com permissão de leitura geral para visualizar o ranking de estudantes e acompanhar o progresso das turmas.
+**Admin:** Acesso total via painel de controle do Strapi para gerenciar entidades, usuários e configurações do backend.
 
 ## :triangular_flag_on_post:	 Principais funcionalidades da aplicação
 
-Descreva ou liste brevemente as principais funcionalidades da aplicação que será desenvolvida. Destaque a funcionalidades que serão acessíveis a todos os usuários e aquelas restritas a usuários logados.
+**Funcionalidades Públicas:**
+* Cadastro de novos usuários.
+* Autenticação via Login (geração de token JWT).
+
+**Funcionalidades Restritas (Apenas Autenticados):**
+* **Dashboard Gamificado:** Visualização do Nível atual, barra de progresso para o próximo nível e XP total acumulado.
+* **Gestão de Tarefas (CRUD):** Criar, ler, editar e excluir tarefas de estudo.
+* **Mecânica de Recompensa:** Marcar tarefas como concluídas para receber a quantidade de XP predefinida daquela tarefa.
+* **Logout:** Encerramento seguro da sessão.
 
 ## :spiral_calendar: Entidades ou tabelas do sistema
 
-Liste as principais entidades do sistema.
+* **User:** Tabela nativa do Strapi gerenciada pelo plugin Users & Permissions (adicionados campos customizados `xp` e `level`).
+* **Task:** Tabela de tarefas acadêmicas, contendo título, descrição, valor de XP, status de conclusão e relacionamento Many-to-One com o User.
 
 
 ----
