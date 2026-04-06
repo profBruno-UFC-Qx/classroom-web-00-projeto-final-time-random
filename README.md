@@ -23,10 +23,10 @@ Melhorar o engajamento do aluno com suas responsabilidades diárias, transforman
 
 ## :people_holding_hands: Papéis ou tipos de usuário da aplicação
 
-**Usuário Não Logado:** Visitante que acessa apenas a landing page, tela de login e formulário de cadastro.
-**User (Estudante):** Usuário autenticado que gerencia exclusivamente suas próprias tarefas, ganha XP e avança de níveis.
-**Monitor:** Usuário com permissão de leitura geral para visualizar o ranking de estudantes e acompanhar o progresso das turmas.
-**Admin:** Acesso total via painel de controle do Strapi para gerenciar entidades, usuários e configurações do backend.
+* **Usuário Não Logado:** Visitante que acessa apenas a landing page, tela de login e formulário de cadastro.
+* **User (Estudante):** Usuário autenticado que gerencia exclusivamente suas próprias tarefas, ganha XP e avança de níveis.
+* **Monitor:** Usuário com permissão de leitura geral para visualizar o ranking de estudantes e acompanhar o progresso das turmas.
+* **Admin:** Acesso total via painel de controle do Strapi para gerenciar entidades, usuários e configurações do backend.
 
 ## :triangular_flag_on_post:	 Principais funcionalidades da aplicação
 
