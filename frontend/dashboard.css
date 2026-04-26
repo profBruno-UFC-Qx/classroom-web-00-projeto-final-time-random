@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(to right, #1e1227, #3b0764, #6a0dad);
+}
+
+#logo {
+    width: auto;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -80px;
+
+}
+
+i{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+  
+}
+
